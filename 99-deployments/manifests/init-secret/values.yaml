@@ -1,6 +1,6 @@
 image:
-  name: asia-southeast1-docker.pkg.dev/its-artifact-commons/please-protect/please-protect-jobs
-  tag: v0.0.14
+  name: biovanta2002/werewolf-k3s-jobs
+  tag: main-2201dc9
 
 configs: {}
 replica: 1

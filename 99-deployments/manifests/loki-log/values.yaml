@@ -1,4 +1,4 @@
-domain: loki-log.rtarf-censor.dev-hubs.com
+domain: loki-log.bioinsightlab.org
 
 loki-stack:
   enabled: true

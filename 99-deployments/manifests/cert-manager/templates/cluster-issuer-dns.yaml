@@ -6,14 +6,14 @@ metadata:
   name: lets-encrypt-dns
 spec:
   acme:
-    email: pjame.fb@gmail.com
+    email: phanuwat.p2002@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: lets-encrypt-dns
     solvers:
       - dns01:
           cloudflare:
-            email: pjame.fb@gmail.com
+            email: phanuwat.p2002@gmail.com
             apiTokenSecretRef:
               name: cloudflare-dns
               key: CLOUDFLARE_API_TOKEN
