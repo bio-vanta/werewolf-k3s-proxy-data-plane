@@ -1,0 +1,178 @@
+ppSensorApiDev:
+  service:
+    name: sensor-api-upstream-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.11
+  ingress:
+    name: sensor-api-proxy-dev
+    vhost: api-dev.sensor.local
+    host: api-dev.sensor-01.please-protect.com
+
+ppSensorWebDev:
+  service:
+    name: sensor-web-upstream-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.11
+  ingress:
+    name: sensor-web-proxy-dev
+    vhost: web-dev.sensor.local
+    host: web-dev.sensor-01.please-protect.com
+
+ppSensorApiProd: {} # No API in production yet, but we want to keep the structure consistent for when we do have one.
+
+ppSensorWebProd:
+  service:
+    name: sensor-web-upstream-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.11
+  ingress:
+    name: sensor-web-proxy-prod
+    vhost: web.sensor.local
+    host: web.sensor-01.please-protect.com
+
+ppCenterOpenCTI:
+  service:
+    name: center-opencti-upstream
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-opencti-proxy
+    vhost: opencti.pp-center.local
+    host: opencti.center.please-protect.com
+
+ppCenterWebProd:
+  service:
+    name: center-web-upstream-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-web-proxy-prod
+    vhost: center-prod.pp-center.local
+    host: web.center.please-protect.com
+
+ppCenterWebDev:
+  service:
+    name: center-web-upstream-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-web-proxy-dev
+    vhost: center-dev.pp-center.local
+    host: web-dev.center.please-protect.com
+
+ppCenterApiProd:
+  service:
+    name: center-api-upstream-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-api-proxy-prod
+    vhost: api-prod.pp-center.local
+    host: api.center.please-protect.com
+
+ppCenterApiDev:
+  service:
+    name: center-api-upstream-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-api-proxy-dev
+    vhost: api-dev.pp-center.local
+    host: api-dev.center.please-protect.com
+
+ppCenterDownloads:
+  service:
+    name: center-downloads-upstream
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: center-downloads-proxy
+    vhost: downloads.pp-center.local
+    host: downloads.center.please-protect.com
+
+### Please Payment ###
+pleasePaymentAdminDev:
+  service:
+    name: please-payment-admin-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-admin-dev
+    vhost: admin-dev.please-payment.local
+    host: admin-dev.please-payment.com
+
+pleasePaymentAdminProd:
+  service:
+    name: please-payment-admin-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-admin-prod
+    vhost: admin-prod.please-payment.local
+    host: admin.please-payment.com
+
+pleasePaymentMerchantDev:
+  service:
+    name: please-payment-merchant-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-merchant-dev
+    vhost: merchant-dev.please-payment.local
+    host: merchant-dev.please-payment.com
+
+pleasePaymentMerchantProd:
+  service:
+    name: please-payment-merchant-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-merchant-prod
+    vhost: merchant-prod.please-payment.local
+    host: merchant.please-payment.com
+
+pleasePaymentNotiHubDev:
+  service:
+    name: please-payment-notihub-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-notihub-dev
+    vhost: notihub-dev.please-payment.local
+    host: notihub-dev.please-payment.com
+
+pleasePaymentNotiHubProd:
+  service:
+    name: please-payment-notihub-prod
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-notihub-prod
+    vhost: notihub-prod.please-payment.local
+    host: notihub.please-payment.com
+
+pleasePaymentApiDev:
+  service:
+    name: please-payment-api-dev
+    port: 443
+  endpoints:
+    ip: 192.168.1.13
+  ingress:
+    name: please-payment-api-dev
+    vhost: api-dev.please-payment.local
+    host: api-dev.please-payment.com
